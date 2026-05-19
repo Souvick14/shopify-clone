@@ -1,0 +1,109 @@
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #02090a;
+}
+::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+main{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    z-index: -111;
+}
+#first-section{
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#first-section-video{
+    z-index: -1;
+    width: 100vw; 
+}
+.firsttext{
+    z-index: 1;
+    position: absolute;
+    bottom: 31vh;
+    left: 120px;
+    /* font-family: sans-serif; */
+    font-size: 6rem;
+    color: white;
+    font-family: "Prompt", sans-serif;
+}
+.firsttext div{
+   
+    width: 1000px;
+    height: 100px;
+    overflow: hidden;
+}
+#textchanger{
+  font-weight: 100;
+  font-style: normal;
+    font-size: 5rem;
+    color: white;
+    font-weight: 100;
+    transition: opacity 0.8s ease, transform 0.8s ease; 
+}
+.secondtext{
+    position: absolute;
+    color: white;
+    bottom: 20vh;
+    left: 124px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+#firstsectionbuttons{
+    position: absolute;
+    bottom: 10vh;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+#firstsectionstart{
+    margin-left: 8vw;
+    width: 150px;
+    background-color: white;
+    height: 50px;
+    font-family: "Prompt", sans-serif;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0px solid transparent;
+}
+#firstsectionstart:hover{
+
+    background-color: rgb(174, 174, 174);
+    
+}
+#firstsectionwhywebuild{
+    margin-right: 8vw;
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    font-family: "Prompt", sans-serif;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    border: 0px solid transparent;
+}
+#firstsectionwhywebuild:hover{
+    background-color: rgba(255, 255, 255, 0.104);
+    backdrop-filter: blur(20px);
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sue+Ellen+Francisco&family=Tiro+Bangla:ital@0;1&display=swap');
+

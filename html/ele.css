@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 16, 0);
+}
+#secondsectionphoto{
+    width: 400vw;
+    height: 55vh;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 55vh;
+    transition: transform 1s ease;
+    /* transform: translateX(-300vw); */
+}
+.flexphoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#secondsectionphoto>div:nth-child(2){
+    background-color: purple;
+}
+#secondsectionphoto>div:nth-child(3){
+    background-color: green;
+}
+#secondsectionphoto>div:nth-child(4){
+    background-color: black;
+}
+#secondsectionphoto>div:nth-child(1)>div{
+    width: 88vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+#secondsectionphoto>div:nth-child(1)>div>div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#secondsectionphoto>div:nth-child(1)>div>div>img{
+    border-radius: 3rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#secondsectionphoto>div:nth-child(2)>div{
+    width: 88vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+#secondsectionphoto>div:nth-child(2)>div>div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#secondsectionphoto>div:nth-child(2)>div>div>img{
+    border-radius: 3rem;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+#secondsectionphoto>div:nth-child(3)>div{
+    width: 88vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+#secondsectionphoto>div:nth-child(3)>div>div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#secondsectionphoto>div:nth-child(3)>div>div>img{
+    border-radius: 3rem;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+#secondsectionphoto>div:nth-child(4)>div{
+    width: 88vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+#secondsectionphoto>div:nth-child(4)>div>div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#secondsectionphoto>div:nth-child(4)>div>div>img{
+    border-radius: 3rem;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}

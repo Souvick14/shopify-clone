@@ -1,0 +1,10 @@
+import * as THREE from 'three';
+import { WebGLRenderer } from 'three';
+import { PerspectiveCamera } from 'three';
+const w= window.innerWidth;
+const h= window.innerHeight;
+const sence= new THREE.Scene();
+const camera =new PerspectiveCamera(75,w/h,0.1,1000);
+const renderer=new WebGLRenderer();
+renderer.setSize(w,h);
+document.body.appendChild(renderer.domElement);

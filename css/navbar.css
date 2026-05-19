@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: wheat;
+    position: relative;
+    z-index: 0;
+}
+#navbar{
+    color: white;
+    width: 100%;
+    height: 3.9rem;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+#firsthalf{
+    margin-right: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+    height: inherit;
+    /* background-color: red; */
+}
+#weblogo{
+    width: 30px;
+height: 30px;
+/* margin-bottom: 5px; */
+}
+#homenavlink{
+    display: flex;
+}
+#webimg-webname{
+   /* width: 200px; */
+    height: 4.7rem;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 35px 100px;
+    grid-template-rows: 2.4rem;
+    font-family: intervar;
+    font-size: 0.7rem;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.navlink{
+cursor: pointer;
+height: 3.9rem;
+position: relative;
+/* font-family: intertight; */
+font-family: sans-serif;
+font-weight: 600;
+font-size: 0.9rem;
+    text-decoration: none;
+    padding: 0px 15px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: white;
+}
+.greatethandownwards{
+    display: inline-block;
+    transform: scaleX(1.5) scaleY(0.7);
+    font-weight: 100;
+}
+.navlink:hover{
+    text-decoration: underline;
+}
+#sencondhalf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#login{
+    cursor: pointer;
+    font-family: sans-serif;
+    margin: 0px 20px;
+}
+#login:hover{
+    text-decoration: underline;
+}
+#signup{
+    white-space: nowrap;
+    width: 130px;
+    height: 2.7rem;
+    cursor: pointer;
+    font-size: 0.93rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    background-color: white;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+}
+#hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    transform: scale(0.6);
+    /* background-color: red; */
+    text-decoration: none;
+}
+.hambar{
+    width: inherit;
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+     border-top-left-radius: 2rem; 
+     border-top-right-radius: 2rem; 
+     border-bottom-left-radius: 2rem; 
+     border-bottom-right-radius: 2rem; 
+}
+#hambottom:hover{
+    animation: bottomcross 1s 1;
+}
+#hamtop{
+    /* transform: rotateZ(36deg) ; */
+    /* transform: ; */
+    transform-origin: left;
+    background-color: white;
+}
+#hambottom{
+    transform-origin: left;
+    background-color: white;
+
+}
+#hammiddle{
+    background-color: white;
+}
+.extender{
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.5s ease;
+}
+@keyframes topcross {
+    from{
+        transform: rotateY(0deg) ;
+        
+    }
+    to{
+        transform: rotateZ(36deg) scaleX(1.2);
+    }
+}
+@keyframes bottomcross {
+    from{
+        transform: rotateY(0deg) ;
+        
+    }
+    to{
+        transform: rotateZ(-36deg) scaleX(1.2);
+    }
+}
+@media screen and (max-width:1200px){
+    #nav-links{
+        display: none;
+    }
+    #firsthalf{
+        margin: 0px 50px ;
+        justify-content: flex-start;
+    }
+    #hamburger{
+        display: flex;
+        margin: 0px;
+    }
+    #signup{
+        font-weight: 400;
+        color: white;
+        width: 85px;
+        background-color: transparent;
+        text-decoration:underline;
+        border: 0px solid black;
+    }
+ 
+    #login{
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: intervar;
+    src: url(/font/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: intertight;
+    src: url(/font/Inter_Tight/InterTight-Italic-VariableFont_wght.ttf);
+}

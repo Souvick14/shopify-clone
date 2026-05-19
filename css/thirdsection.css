@@ -1,0 +1,134 @@
+#thirdsection{
+    width: 100vw;
+    height: 100vh;
+    background-color: #02090a;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 0.3fr;
+}
+#thirdsection>div:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+#thirdsection>div:nth-child(1)>h1{
+    margin-left: 6vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: 'roboto';
+    color: white;
+}
+#thirdsection>div:nth-child(1)>p{
+    
+    position: absolute;
+    bottom: 7vh;
+    right: 6vw;
+    font-size: 1.2rem;
+    font-family: 'roboto';
+    color: rgb(81, 81, 81);
+}
+#thirdsection>div:nth-child(2){
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 88vw;
+    grid-template-rows: 1fr;
+}
+#thirdsection>div:nth-child(2)>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60vh;
+    gap: 20px;
+}
+#thirdsection>div:nth-child(2)>div>div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 20px;
+}
+/* #t1,#t2,#s3{
+       width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+} */
+
+#t1{
+    background-image: url(/image/bro.png);
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#t1:hover{
+    background-image: url(/image/summer.png);
+    
+}
+#t2{
+    background-image: url(/image/cdn.png);
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#t2:hover{
+    background-image: url(/image/clothes.png);
+    
+}
+#t3{
+    background-image: url(/image/mattel.png);
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#t3:hover{
+    background-image: url(/image/toy.png);
+    
+}
+.font-giver{
+    /* margin-top: 20px; */
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+.font-giver-p{
+    margin-top: 10px;
+    color: rgb(101, 101, 101);
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+#thirdsectionbutton{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pick{
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'rubik';
+    border: 2px solid white;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    text-decoration: none;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: transparent;
+    color: white;
+}
+#pick:hover{
+
+    border: 3px solid white;
+
+}
+
+@font-face {
+    font-family:'rubik' ;
+    src: url(/font/Rubik/Rubik-VariableFont_wght.ttf);
+}

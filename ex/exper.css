@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #02090a;
+}
+#secondsection{
+    width: 100vw;
+    height: 110vh;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    background-color: #02090a;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+}
+.secondsectiontext{
+    width: 100vw;
+    position: relative;
+    top: 15vh;
+    height: 40vh;
+
+}
+.secondsectiontext>div{
+    width: 88vw;
+    margin: auto;
+    height: 40vh;
+    
+}
+.secondsectiontext>div>p{
+    margin-bottom: 50px;
+    font-size: 4.3rem;
+    font-family: roboto,sans-serif;
+    color: white;
+}
+.secondsectiontext>div span{
+    font-size: 3.4rem;
+    font-family: roboto,sans-serif;
+    color: rgb(139, 139, 139);
+}
+.secondsectiontext>div span:hover{
+    background:  linear-gradient(-90deg,rgba(0, 193, 135, 0.46) 0%, rgba(0, 194, 208, 1) 50%);
+    
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+/* -------- */
+#secondsectionphoto{
+    
+    width: 400vw;
+    height: 50vh;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50vh;
+    transition: transform 1s ease;
+
+}
+.flexphoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondsectionphoto>div:nth-child(1)>div{
+    width: 88vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+#secondsectionphoto>div:nth-child(1)>div>div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#secondsectionphoto>div:nth-child(1)>div>div>img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#secondsectionphoto>div:nth-child(2)>div{
+    width: 88vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+#secondsectionphoto>div:nth-child(2)>div>div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#secondsectionphoto>div:nth-child(2)>div>div>img{
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+#secondsectionphoto>div:nth-child(3)>div{
+    width: 88vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+#secondsectionphoto>div:nth-child(3)>div>div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#secondsectionphoto>div:nth-child(3)>div>div>img{
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+#secondsectionphoto>div:nth-child(4)>div{
+    width: 88vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+#secondsectionphoto>div:nth-child(4)>div>div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#secondsectionphoto>div:nth-child(4)>div>div>img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+#sell{
+    z-index: 1;
+}
+.hov{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.hover-co{
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #05171aeb;
+}
+.linktext{
+    text-decoration: none;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+}
+
+/* -------- */
+@font-face {
+    font-family: "roboto";
+    src: url(/font/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf);
+}
